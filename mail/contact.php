@@ -1,4 +1,7 @@
 <?php
+ini_set("SMTP", "smtpwolfsotre.shop");
+ini_set("smtp_port", "5847"); 
+
 if(empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   http_response_code(500)|| empty($_POST['archivo']) ;
   exit();
